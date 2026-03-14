@@ -327,34 +327,61 @@ CSS
 
 ---
 
-# Project Structure
+## Project Structure
 
-loan-knn-approval-predictor
+```
+loan-knn-approval-predictor/
+│
+├── app/
+│   ├── app.py
+│   └── templates/
+│       └── index.html
+│
+├── model/
+│   ├── model.pkl
+│   ├── scaler.pkl
+│   └── columns.pkl
+│
+├── notebook/
+│   └── knn_model_training.ipynb
+│
+├── data/
+│   └── train.csv
+│
+├── images/
+│   └── eda_visualizations/
+│
+├── requirements.txt
+│
+└── README.md
+```
 
-app
-  app.py
-  templates
-    index.html
+### Folder Explanation
 
-model
-  model.pkl
-  scaler.pkl
-  columns.pkl
+**app/**
+Contains the Flask web application code and HTML templates used for the user interface.
 
-notebook
-  knn_model_training.ipynb
+**model/**
+Stores the trained machine learning model and preprocessing files.
 
-data
-  train.csv
+* `model.pkl` → Trained KNN model
+* `scaler.pkl` → Feature scaling object
+* `columns.pkl` → List of model input features
 
-images
-  eda_visualizations
+**notebook/**
+Contains the Jupyter Notebook used for data analysis, model training, and experimentation.
 
-requirements.txt
+**data/**
+Stores the dataset used for training and testing the model.
 
-README.md
+**images/**
+Contains visualizations generated during Exploratory Data Analysis (EDA).
 
----
+**requirements.txt**
+Lists all Python dependencies required to run the project.
+
+**README.md**
+Project documentation explaining the purpose, methodology, and usage of the system.
 
 # How to Run the Project
 

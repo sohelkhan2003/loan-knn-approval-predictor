@@ -360,7 +360,7 @@ README.md
 
 Clone the repository
 
-git clone https://github.com/yourusername/loan-knn-approval-predictor.git
+git clone https://github.com/sohelkhan2003/loan-knn-approval-predictor.git
 
 Install dependencies
 
